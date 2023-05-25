@@ -2,10 +2,9 @@ import React, { useContext } from 'react';
 import { LanguageContext } from '../../contexts/languagecontext/LanguageContext';
 import './searchresults.css'; 
 
-const apiKey = process.env.REACT_APP_OPENAI_KEY;
-
 const SearchResults = ({ results, setSelectedSong, setLoading, loading }) => {
   const { selectedLanguage } = useContext(LanguageContext);
+  const apiKey = process.env.REACT_APP_OPENAI_KEY;
 
   const handleClick = async (result) => {
     setLoading(true);
@@ -48,7 +47,7 @@ const SearchResults = ({ results, setSelectedSong, setLoading, loading }) => {
 
     const requestOptions = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ${apiKey}' },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
       body: JSON.stringify(prompt)
     };
 
