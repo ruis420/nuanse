@@ -1,0 +1,70 @@
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.selected-option {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Istok Web, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+    font-size: 16px;  
+    color: black;
+}
+
+.selected-option:hover {
+    background-color: #e0e0e0;
+}
+
+.options-container-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;  
+}
+
+.options-container {
+    overflow: auto;
+    max-height: 200px;
+}
+
+.options-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.options-container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.options-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.options-container::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 4px;
+}
+
+.options-container::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: #f0f0f0;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,18 @@
+.search-bar {
+  width: 500px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: Istok Web, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}

@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+} 
+
+.App-logo {
+    height: 250px;
+    pointer-events: none;
+    border-radius: 10%;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;   
+    background: black;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.circle-1 {
+    top: 5%;
+    left: 5%;
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: #570D4B;
+}
+
+.circle-2 {
+    top: 10%;
+    right: 10%;
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: #0093E5;
+}
+
+.circle-3 {
+    bottom: 10%;
+    left: 20%;
+    width: 30%;
+    padding-bottom: 30%;
+    background-color: #1300EE;
+}
+
+.circle-4 {
+    bottom: 5%;
+    right: 5%;
+    width: 15%;
+    padding-bottom: 15%;
+    background-color: #00FF0A;
+}
+
+.circle-5 {
+    bottom: 5%;
+    left: 0%;
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: #B86E00;
+}
+
+.circle-6 {
+    bottom: 5%;
+    right: 20%;
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: #E200B1;
+}
+
+.circle-7 {
+    top: 0%;
+    right: 30%;
+    width: 30%;
+    padding-bottom: 30%;
+    background-color: #F3BE00;
+}
+
+.expand-button {
+    border: none; 
+    background-color: transparent; 
+    z-index: 2;
+}
+
+.expand-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomePage {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    color: white;
+    z-index: 1;
+    font-family: Istok Web, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+}
+
+.lyrics-container {
+    position: relative;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    margin: 5px 0;
+    width: 60%;
+}
+
+.lyrics-container-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999; 
+    background-color: black; 
+    overflow: auto; 
+}
+
+.lyrics-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+}
+  
+.lyrics-content {
+    height: 300px;  
+    overflow-y: auto;
+    padding-right: 20px;  
+}  
+
+.lyrics-content .lyrics p:last-child {
+    color: fuchsia; 
+}
+
+.lyrics-content::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.lyrics-content {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+  
+.lyrics-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.lyrics-content::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 4px;
+}
+  
+.lyrics-content::-webkit-scrollbar-thumb:hover {
+    background: darkgrey;
+}
+
+.lyrics-container-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: white;
+}
+
+.song-cover {
+    height: 250px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-top: 1%;
+}
+
+.song-info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.song-info h2 {
+    font-size: 35px;
+}
+
+.song-info h3 {
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+
