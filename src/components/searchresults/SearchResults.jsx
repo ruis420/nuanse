@@ -42,7 +42,7 @@ const SearchResults = ({ results, setSelectedSong, setLoading, loading }) => {
         }
       ],
       "max_tokens": 500, 
-      "temperature": 0.8 
+      "temperature": 0.2 
     };
 
     const requestOptions = {

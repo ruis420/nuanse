@@ -60,13 +60,15 @@ const HomePage = () => {
                 <br></br>
                 <img src={nuanselogo} className="App-logo" alt="nuanselogo" />
                 <br></br>
-                <p>Nuanse Translates and Analyzes your Favorite Songs</p>
-                <br></br>
-                <h1>Select your Language</h1>
-                <LanguageSelector />
-                <h1>Search a Song</h1>
-                <Searchbar onSearch={setSearchResults} /> 
-                <SearchResults results={results} setSelectedSong={setSelectedSong} setLoading={setLoading} loading={loading}/>
+                <div className="language-search-container">
+                  <br></br>
+                  <p>Nuanse Translates and Analyzes your Favorite Songs</p>
+                  <h1>Select your Language</h1>
+                  <LanguageSelector />
+                  <h1>Search a Song</h1>
+                  <Searchbar onSearch={setSearchResults} /> 
+                  <SearchResults results={results} setSelectedSong={setSelectedSong} setLoading={setLoading} loading={loading}/>
+                </div>
               </> 
             ) : (
               <>
@@ -105,12 +107,15 @@ const HomePage = () => {
       ) : (
         <div className="lyrics-container-full">
           <div className="header-container">
-            <h2>{selectedSong.title}</h2>
-            <h3>{selectedSong.artist.name}</h3>
+            <div className="title-container">
+              <h2>{selectedSong.title}</h2>
+              <h3>{selectedSong.artist.name}</h3>
+            </div>
             <button className="expand-button" onClick={handleExpand}>
               <img src={expandicon} alt="Collapse" />
             </button>
           </div>
+          <div className="white-bar"></div>
           <div className="lyrics-content">
             {selectedSong.translatedLyrics && Array.isArray(selectedSong.translatedLyrics) && selectedSong.translatedLyrics.length ? (
               selectedSong.translatedLyrics.map((line, index) => (
